@@ -11,4 +11,4 @@ echo '====================' \
 && rm -rf ~/.config/nvim && mkdir ~/.config/nvim && cd ~/.config/nvim && wget -O init.lua https://raw.githubusercontent.com/ngoctd314/dotfile/main/base-nvim.lua \
 && echo '====================' \
 && echo 'Config TMUX' \
-&& cd ~ && wget https://raw.githubusercontent.com/ngoctd313/dotfile/main/.tmux.conf \
+&& cd ~ && wget https://raw.githubusercontent.com/ngoctd314/dotfile/main/.tmux.conf \
