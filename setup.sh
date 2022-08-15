@@ -8,7 +8,7 @@ echo '====================' \
 && rm nvim-linux64.deb \
 && echo '====================' \
 && echo 'Config NVIM' \
-&& rm -rf ~/.config/nvim && mkdir ~/.config/nvim && cd ~/.config/nvim && wget -O init.lua https://raw.githubusercontent.com/ngoctd314/dotfile/main/base-nvim.lua \
+&& rm -rf ~/.config/nvim && mkdir ~/.config/nvim && cd ~/.config/nvim && wget -O init.lua https://raw.githubusercontent.com/ngoctd314/dotfile/main/nvim.lua \
 && echo '====================' \
 && echo 'Config TMUX' \
 && cd ~ && wget https://raw.githubusercontent.com/ngoctd314/dotfile/main/.tmux.conf \
