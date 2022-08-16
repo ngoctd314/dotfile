@@ -1,1 +1,225 @@
-/home/idev/.config/Code/User/settings.json
+{
+	// UI
+	//
+	// theme
+	"workbench.iconTheme": "eq-material-theme-icons-light",
+	"workbench.colorTheme": "Darcula Theme from IntelliJ",
+	"breadcrumbs.enabled": false,
+
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#212121"
+	},
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			// java, groovy
+			{
+				"scope": [
+					"variable.other.object.property.java",
+					"storage.type.java",
+					"storage.type.primitive.java",
+					"variable.other.object.java",
+					"storage.type.object.array.java"
+				],
+				"settings": {
+					"foreground": "#D4D4D4"
+				}
+			},
+			{
+				"scope": [
+					"storage.type.generic.java",
+					"storage.type.annotation.java",
+					"storage.type.groovy"
+				],
+				"settings": {
+					"foreground": "#CC7832"
+				}
+			}
+			// golang
+		]
+	},
+	"explorer.openEditors.visible": 0,
+	"workbench.editor.enablePreview": false,
+	// ${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}
+	"workbench.editor.labelFormat": "short",
+	"window.title": "NgocTD ☘️",
+	"window.menuBarVisibility": "hidden",
+	"window.dialogStyle": "custom",
+
+	// folding
+	"editor.folding": true,
+	"editor.foldingImportsByDefault": true,
+	"editor.showFoldingControls": "mouseover",
+
+	// auto import
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": true
+	},
+	// auto save
+	// "files.autoSave": "onFocusChange",
+
+	// tab file
+	"workbench.editor.showTabs": true,
+	// "workbench.editor.limit.enabled": true,
+	// "workbench.editor.limit.value": 3,
+
+	// zen mode
+	"zenMode.centerLayout": false,
+	"zenMode.fullScreen": false,
+	"zenMode.hideStatusBar": false,
+	"zenMode.silentNotifications": false,
+	"zenMode.hideTabs": false,
+	"zenMode.hideActivityBar": false,
+
+	"editor.minimap.enabled": false,
+	"editor.scrollbar.verticalScrollbarSize": 8,
+	"editor.experimental.useCustomCodeActionMenu": true,
+
+	// number
+	"editor.lineNumbers": "relative",
+	"editor.glyphMargin": false,
+	"editor.fontSize": 12,
+	// font
+	"editor.fontFamily": "Fira Code",
+	"editor.fontWeight": "600",
+	"editor.fontLigatures": true,
+	// tree
+	"explorer.compactFolders": true,
+	// format
+	"editor.formatOnSave": true,
+	// error lens
+	"errorLens.enabled": true,
+	"errorLens.fontWeight": "500",
+	"errorLens.fontStyleItalic": true,
+	"errorLens.messageBackgroundMode": "none",
+	"errorLens.padding": "2px 1ch",
+	"errorLens.borderRadius": "5px",
+	"errorLens.messageTemplate": "$severity $message",
+	"errorLens.severityText": ["🔥", "👎", "INFO", "HINT"],
+	// terminal
+	"terminal.integrated.fontSize": 14,
+	// Language and lsp
+	//
+	// tabnine
+	"tabnine.experimentalAutoImports": true,
+
+	// extension
+	"prettier.useTabs": true,
+
+	// golang
+	"go.lintTool": "golint",
+	"go.lintOnSave": "file",
+	"go.languageServerExperimentalFeatures": {
+		"diagnostics": true
+	},
+	"gopls": {
+		"ui.semanticTokens": true
+		// "formatting.gofumpt": true
+	},
+	"[go]": {
+		"editor.defaultFormatter": "golang.go",
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true,
+		"editor.snippetSuggestions": "bottom"
+	},
+	"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+
+	"[java]": {},
+
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.tabSize": 4
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.tabSize": 4
+	},
+
+	"[graphql]": {
+		"editor.tabSize": 4,
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+
+	// codesnap
+	"codesnap.containerPadding": "0em",
+	"codesnap.roundedCorners": false,
+
+	// neovim
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.smoothScrolling": true,
+	"editor.cursorBlinking": "solid",
+	"vim.hlsearch": true,
+	"vim.enableNeovim": true,
+	"vim.timeout": 300,
+	// "vim.neovimPath": "/usr/bin/nvim",
+	// "vim.surround": true
+	"vim.foldfix": true,
+	"vim.easymotion": true,
+	"vim.easymotionMarkerBackgroundColor": "#f44336",
+	"vim.easymotionMarkerForegroundColorOneChar": "#fff",
+	"vim.useSystemClipboard": true,
+	"vim.incsearch": true,
+	"vim.useCtrlKeys": true,
+	"vim.leader": "<space>",
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["s"],
+			"after": ["<leader>", "<leader>", "s"]
+		},
+		{
+			"before": ["S"],
+			"commands": ["editor.action.showHover"]
+		},
+		{
+			"before": ["<leader>", "e"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		// quick navigation
+		{
+			"before": ["g", "d"],
+			"commands": ["editor.action.revealDefinition"]
+		},
+		{
+			"before": ["g", "r"],
+			"commands": ["editor.action.goToReferences"]
+		},
+		{
+			"before": ["g", "s"],
+			"commands": ["search.action.openNewEditor"]
+		},
+		{
+			"before": ["g", "e"],
+			"commands": ["editor.action.marker.next"]
+		},
+		{
+			"before": ["g", "p"],
+			"commands": ["bookmarks.jumpToPrevious"]
+		},
+		{
+			"before": ["g", "t"],
+			"commands": ["bookmarks.toggle"]
+		},
+		{
+			"before": ["H"],
+			"commands": [":bprevious"]
+		},
+		{
+			"before": ["L"],
+			"commands": [":bnext"]
+		}
+	],
+	"vim.visualModeKeyBindingsNonRecursive": [
+		// easy motion
+		{
+			"before": ["s"],
+			"after": ["<leader>", "<leader>", "s"]
+		}
+	],
+	"glassit.alpha": 255,
+	"debug.console.collapseIdenticalLines": false,
+	"java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/idev/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+	"window.titleBarStyle": "custom",
+	"go.toolsManagement.autoUpdate": true,
+	"window.zoomLevel": 1,
+	"workbench.activityBar.visible": false
+}
