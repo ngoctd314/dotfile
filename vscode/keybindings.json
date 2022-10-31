@@ -116,11 +116,6 @@
 		"command": "focusNextCodeAction"
 	},
 
-	// focus outline
-	{
-		"key": "ctrl+o",
-		"command": "outline.focus"
-	},
 	// esc for vim
 	{
 		"key": "capslock",
@@ -135,5 +130,15 @@
 			"text": "\u000c"
 		},
 		"when": "terminalFocus"
+	},
+	// focus bookmark explorer
+	{
+		"key": "ctrl+b",
+		"command": "bookmarksExplorer.focus"
+	},
+	// focus outline
+	{
+		"key": "ctrl+o",
+		"command": "outline.focus"
 	}
 ]
