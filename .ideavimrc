@@ -1,0 +1,28 @@
+let g:mapleader = "\<Space>"
+
+set relativenumber
+
+" Navigation
+"
+" Better window navigation
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+" Quick navigation between file
+map <C-p> <Action>(RecentFiles)
+
+" Quick fix
+map q <Action>(ShowIntentionActions)
+
+" Creation
+"
+" Create new java class
+map <leader>n <Action>(NewClass)
+" Create new golang file
+map <leader>n <Action>(Go.NewGoFile)
+
+" Plugins
+set easymotion
+nmap s <Plug>(easymotion-bd-f)
+
