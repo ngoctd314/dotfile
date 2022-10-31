@@ -4,6 +4,10 @@
 	// theme
 	"workbench.iconTheme": "eq-material-theme-icons-light",
 	"workbench.colorTheme": "Darcula Theme from IntelliJ",
+
+	// outline
+	"outline.showFields": false,
+
 	"breadcrumbs.enabled": false,
 
 	"workbench.colorCustomizations": {
@@ -76,8 +80,9 @@
 
 	// number
 	"editor.lineNumbers": "relative",
-	"editor.glyphMargin": false,
-	"editor.fontSize": 12,
+	"editor.glyphMargin": true,
+	"editor.fontSize": 11.5,
+	// "editor.lineHeight": 1.2,
 	// font
 	"editor.fontFamily": "Fira Code",
 	"editor.fontWeight": "600",
@@ -90,11 +95,11 @@
 	"errorLens.enabled": true,
 	"errorLens.fontWeight": "500",
 	"errorLens.fontStyleItalic": true,
-	"errorLens.messageBackgroundMode": "none",
-	"errorLens.padding": "2px 1ch",
-	"errorLens.borderRadius": "5px",
-	"errorLens.messageTemplate": "$severity $message",
-	"errorLens.severityText": ["🔥", "👎", "INFO", "HINT"],
+	"errorLens.light": { "warningGutterIconPath": "#000000" },
+	"errorLens.messageBackgroundMode": "line",
+	"errorLens.followCursor": "activeLine",
+	// "errorLens.messageTemplate": "$severity: $message",
+	// "errorLens.severityText": ["🔥", "👎", "INFO", "HINT"],
 	// terminal
 	"terminal.integrated.fontSize": 14,
 	// Language and lsp
@@ -111,6 +116,7 @@
 	"go.languageServerExperimentalFeatures": {
 		"diagnostics": true
 	},
+	"go.testFlags": ["-v"],
 	"gopls": {
 		"ui.semanticTokens": true
 		// "formatting.gofumpt": true
@@ -141,8 +147,8 @@
 	},
 
 	// codesnap
-	"codesnap.containerPadding": "0em",
-	"codesnap.roundedCorners": false,
+	// "codesnap.containerPadding": "0em",
+	// "codesnap.roundedCorners": false,
 
 	// neovim
 	"editor.cursorSmoothCaretAnimation": true,
@@ -220,6 +226,11 @@
 	"java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/idev/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
 	"window.titleBarStyle": "custom",
 	"go.toolsManagement.autoUpdate": true,
-	"window.zoomLevel": 1,
+	"vs-kubernetes": {
+		"vscode-kubernetes.minikube-path.linux": "/home/idev/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+		"vscode-kubernetes.helm-path.linux": "/home/idev/.vs-kubernetes/tools/helm/linux-amd64/helm"
+	},
+	"window.zoomLevel": 2,
+	"cSpell.userWords": ["workerpool"],
 	"workbench.activityBar.visible": false
 }
